@@ -1,123 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Bridgeview Maintenance LLC</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/app.css">
-    
+    <link rel="stylesheet" href="css/app.css" />
+
     <style>
-        * {
-            font-family: 'Poppins', sans-serif !important;
-        }
-        
-        /* Ensure FontAwesome icons are not affected by font-family */
-        i[class*="fa-"], 
-        i[class*="fas"], 
-        i[class*="far"], 
-        i[class*="fab"], 
-        i[class*="fal"],
-        i[class*="fa-solid"],
-        i[class*="fa-regular"],
-        i[class*="fa-brands"] {
-            font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 5 Free" !important;
-        }
-        
-        /* Alternative FontAwesome font family */
-        .fas, .far, .fab, .fal, .fa-solid, .fa-regular, .fa-brands {
-            font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 5 Free" !important;
-        }
+      * {
+        font-family: "Poppins", sans-serif !important;
+      }
+
+      /* Ensure FontAwesome icons are not affected by font-family */
+      i[class*="fa-"],
+      i[class*="fas"],
+      i[class*="far"],
+      i[class*="fab"],
+      i[class*="fal"],
+      i[class*="fa-solid"],
+      i[class*="fa-regular"],
+      i[class*="fa-brands"] {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro",
+          "Font Awesome 5 Free" !important;
+      }
+
+      /* Alternative FontAwesome font family */
+      .fas,
+      .far,
+      .fab,
+      .fal,
+      .fa-solid,
+      .fa-regular,
+      .fa-brands {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Pro",
+          "Font Awesome 5 Free" !important;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Topbar Start -->
-    <div style="background-color: #464646;" class="container-fluid bg d-none d-xl-block w-100">
-        <div class="row gx-0 align-items-center" style="height: 45px;">
-            <!-- Left Side: Contact Info -->
-            <div class="col-lg-6 text-center text-lg-start mb-lg-0">
-                <div class="d-flex flex-wrap">
-                    <a href="tel:+12064568777" class="text-white me-4">
-                        <i class="fas fa-phone-alt text-white me-2"></i>
-                        (206) 456-8777
-                    </a>
-                    <a href="mailto:info@bridgeviewmaintenance.com" class="text-white me-0">
-                        <i class="fas fa-envelope text-white me-2"></i>
-                        info@bridgeviewmaintenance.com
-                    </a>
-                </div>
-            </div>
-
-            <!-- Right Side: Business Hours & Socials -->
-            <div class="col-lg-6 text-center text-lg-end">
-                <div class="d-flex align-items-center justify-content-end flex-wrap">
-                    <a href="#" class="text-white me-3">
-                        <i class="fas fa-clock text-white me-2"></i>
-                        Mon - Sat: 8:00 AM - 6:00 PM | Emergency Only Before/After Hours
-                    </a>
-
-                </div>
-            </div>
+    <div
+      style="background-color: #464646"
+      class="container-fluid bg d-none d-xl-block w-100"
+    >
+      <div class="row gx-0 align-items-center" style="height: 45px">
+        <!-- Left Side: Contact Info -->
+        <div class="col-lg-6 text-center text-lg-start mb-lg-0">
+          <div class="d-flex flex-wrap">
+            <a href="tel:+12064568777" class="text-white me-4">
+              <i class="fas fa-phone-alt text-white me-2"></i>
+              (206) 456-8777
+            </a>
+            <a
+              href="mailto:info@bridgeviewmaintenance.com"
+              class="text-white me-0"
+            >
+              <i class="fas fa-envelope text-white me-2"></i>
+              info@bridgeviewmaintenance.com
+            </a>
+          </div>
         </div>
+
+        <!-- Right Side: Business Hours & Socials -->
+        <div class="col-lg-6 text-center text-lg-end">
+          <div class="d-flex align-items-center justify-content-end flex-wrap">
+            <a href="#" class="text-white me-3">
+              <i class="fas fa-clock text-white me-2"></i>
+              Mon - Sat: 8:00 AM - 6:00 PM | Emergency Only Before/After Hours
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Topbar End -->
 
-
     <!-- Navbar & Hero Start -->
     <div class="container-fluid sticky-top px-0">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-light py-1 px-4">
-            <a href="index.html" class="navbar-brand p-0">
-                <img src="img/new/LOGO.png" alt="Bridgeview Maintenance Logo" style="height: 90px;">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto pt-2 pt-lg-0">
-                    <a href="#home" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#services" class="nav-item nav-link">Services</a>
-                    <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
-                </div>
-                <div class="d-flex align-items-center flex-nowrap pt-3  pt-lg-0 ms-lg-2">
-                    <!-- <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
-                    <a href="#contact" style="background-color: #464646;" class="btn py-2  px-4 flex-wrap flex-sm-shrink-0 text-white ">Contact</a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-light py-1 px-4">
+        <a href="index.html" class="navbar-brand p-0">
+          <img
+            src="img/new/logo1.png"
+            alt="Bridgeview Maintenance Logo"
+            style="height: 90px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+        >
+          <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto pt-2 pt-lg-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#services" class="nav-item nav-link">Services</a>
+            <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
+          </div>
+          <div
+            class="d-flex align-items-center flex-nowrap pt-3 pt-lg-0 ms-lg-2"
+          >
+            <!-- <button class="btn btn-primary py-2 px-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+            <a
+              href="#contact"
+              style="background-color: #464646"
+              class="btn py-2 px-4 flex-wrap flex-sm-shrink-0 text-white"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
     </div>
     <!-- Navbar & Hero End -->
 
@@ -126,674 +168,1237 @@
     <!-- Modal Search End -->
 
     <!-- Hero Section-->
-    <div id="home"
-        style="position:relative;width:100%;height:100vh;background:url('img/new/hero-1.jpg') center/cover no-repeat;">
-        <!-- Overlay -->
-        <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);"></div>
+    <div
+      id="home"
+      style="
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: url('img/new/hero-1.jpg') center/cover no-repeat;
+      "
+    >
+      <!-- Overlay -->
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.85);
+        "
+      ></div>
 
-        <!-- Content -->
+      <!-- Content -->
+      <div
+        style="
+          position: relative;
+          z-index: 1;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          gap: 20px;
+          padding: 0 5%;
+          color: #fff;
+          max-width: 1000px;
+          margin: 0 auto;
+        "
+      >
+        <!-- Subtitle -->
+        <p
+          class="text-uppercase"
+          style="
+            font-size: clamp(1.8rem, 5vw, 2.7rem);
+            /* font-size: clamp(12px, 1.5vw, 30px); */
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 15px;
+          "
+        >
+          Bridgeview Maintenance LLC
+        </p>
+
+
+        <!-- Title -->
+        <h1
+          style="
+            color: white;
+
+            font-size: clamp(12px, 1.5vw, 30px);
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+          "
+        >
+          From Lawn to Roofline, <span class="">Your Trusted Partner</span>
+        </h1>
+
+        <!-- Description -->
+        <p
+          style="color: lightgray"
+          style="
+            max-width: 700px;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            margin-bottom: 35px;
+            opacity: 0.9;
+          "
+        >
+          From routine inspections to emergency repairs, we keep your property
+          running smoothly with professional expertise and reliable service you
+          can always count on.
+        </p>
+
+        <!-- CTA Buttons -->
         <div
-            style="position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 5%;color:#fff;max-width:1000px;margin:0 auto;">
-
-            <!-- Subtitle -->
-            <p style="color: lightslategrey;" class="text-uppercase "
-                style="font-size:clamp(12px,1.5vw,14px);letter-spacing:2px;text-transform:uppercase;margin-bottom:15px;">
-                Bridgeview Maintenance, LLC
-            </p>
-
-            <!-- Title -->
-            <h1
-                style="color:white;font-size:clamp(1.8rem,5vw,3.5rem);font-weight:700;line-height:1.3;margin-bottom:20px;">
-                From Lawn to Roofline, <span class="">Your Trusted Partner</span>
-            </h1>
-
-            <!-- Description -->
-            <p style="color: lightslategrey;" style="max-width:700px;font-size:clamp(1rem,2.5vw,1.1rem);margin-bottom:35px;opacity:0.9;">
-                From routine inspections to emergency repairs, we keep your property running smoothly with professional
-                expertise and reliable service you can always count on.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div style="display:flex;gap:15px;flex-wrap:wrap;justify-content:center;margin-bottom:40px;">
-                <a href="#contact" 
-                    style="background-color: #464646;border:2px solid #464646; color: white; padding:clamp(10px,2vw,14px) clamp(20px,4vw,35px);font-size:clamp(0.9rem,2.5vw,1rem);font-weight:600;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);transition:0.3s;">
-                    Get a Free Quote
-                </a>
-                <a href="#contact" class=" text-white"
-                    style="border: 2px solid #464646; padding:clamp(10px,2vw,14px) clamp(20px,4vw,35px);font-size:clamp(0.9rem,2.5vw,1rem);font-weight:600;text-decoration:none;transition:0.3s;">
-                    Book a Service
-                </a>
-            </div>
-
-
-
+          style="
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+          "
+        >
+          <a
+            href="#contact"
+            style="
+              background-color: #464646;
+              border: 2px solid #464646;
+              color: white;
+              padding: clamp(10px, 2vw, 14px) clamp(20px, 4vw, 35px);
+              font-size: clamp(0.9rem, 2.5vw, 1rem);
+              font-weight: 600;
+              text-decoration: none;
+              box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+              transition: 0.3s;
+            "
+          >
+            Get a Quote
+          </a>
+          <a
+            href="#contact"
+            class="text-white"
+            style="
+              border: 2px solid #464646;
+              padding: clamp(10px, 2vw, 14px) clamp(20px, 4vw, 35px);
+              font-size: clamp(0.9rem, 2.5vw, 1rem);
+              font-weight: 600;
+              text-decoration: none;
+              transition: 0.3s;
+            "
+          >
+            Book a Service
+          </a>
         </div>
+      </div>
     </div>
 
     <!-- About / Intro Section with RGB Stats -->
-<!-- Hero / Stats Section -->
-<div style="background-color:#464646;" class="py-5">
-    <div class="container text-center">
-
-        <!-- Headline -->
-        <h2 class="fw-bold mb-3" style="color:#fff;font-size:clamp(1.5rem,2.5vw,2rem);line-height:1.3;">
+    <!-- Hero / Stats Section -->
+    <div
+      id="why-choose-us"
+      class="container-fluid feature bg-light py-5 wow"
+      data-wow-duration="1s"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <p class="text-uppercase fs-5 mb-0">WHY CHOOSE US</p>
+          <h2
+            class="fw-bold mb-3"
+            style="
+              color: #464646;
+              font-size: clamp(1.5rem, 2.5vw, 2rem);
+              line-height: 1.3;
+            "
+          >
             From Lawn to Roofline, We are your Trusted Maintenance Partner
-        </h2>
+          </h2>
 
-        <!-- Supporting Text -->
-        <p style="color:#ccc;font-size:clamp(0.95rem,2vw,1rem);line-height:1.6;max-width:700px;margin:0 auto 40px;">
-            For over 6 years, we've been the go-to choice for homeowners who demand excellence in home maintenance
-            and repair services.
-        </p>
-
-        <!-- Stats Section -->
-        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:900px;margin:0 auto;">
-
-            <!-- Stat 1 -->
-            <div style="flex:1 1 250px;min-width:200px;background:#2b2b2b;padding:25px 20px;text-align:center;border-radius:10px;transition:0.3s;">
-                <h3 style="color:#fff;font-size:1.75rem;margin-bottom:8px;font-weight:700;">24/6</h3>
-                <p style="color:#bbb;font-size:0.95rem;margin:0;opacity:0.85;">Emergency Service</p>
-            </div>
-
-            <!-- Stat 2 -->
-            <div style="flex:1 1 250px;min-width:200px;background:#1f1f1f;padding:25px 20px;text-align:center;border-radius:10px;transition:0.3s;">
-                <h3 style="color:#fff;font-size:1.75rem;margin-bottom:8px;font-weight:700;">Certified</h3>
-                <p style="color:#bbb;font-size:0.95rem;margin:0;opacity:0.85;">Expert Technicians</p>
-            </div>
-
-            <!-- Stat 3 -->
-            <div style="flex:1 1 250px;min-width:200px;background:#1f1f1f;padding:25px 20px;text-align:center;border-radius:10px;transition:0.3s;">
-                <h3 style="color:#fff;font-size:1.75rem;margin-bottom:8px;font-weight:700;">Fast</h3>
-                <p style="color:#bbb;font-size:0.95rem;margin:0;opacity:0.85;">Response Time</p>
-            </div>
-
+          <p
+            style="
+              color: #464646d1;
+              font-size: clamp(0.95rem, 2vw, 1rem);
+              line-height: 1.6;
+              max-width: 700px;
+              margin: 0 auto 40px;
+            "
+          >
+            For over 6 years, we've been the go-to choice for homeowners who
+            demand excellence in home maintenance and repair services.
+          </p>
         </div>
+        <div class="row g-4">
+          <div
+            class="col-lg-3 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            <div
+              class="feature-item text-center border p-5"
+              style="min-height: 450px"
+            >
+              <div
+                style="background-color: lightgray"
+                class="feature-img d-inline-flex p-4"
+              >
+                <i style="color: #464646" class="fas fa-clock fa-5x"></i>
+              </div>
+              <a href="#" class="fs-3 d-block my-4">Emergency Response</a>
+              <p class="mb-0">
+                We are committed to provide better response on every call we
+                get..
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <div
+              class="feature-item text-center border p-5"
+              style="min-height: 450px"
+            >
+              <div
+                style="background-color: lightgray"
+                class="feature-img d-inline-flex p-4"
+              >
+                <i style="color: #464646" class="fas fa-certificate fa-5x"></i>
+              </div>
+              <a href="#" class="fs-3 d-block my-4">Transparent Pricing</a>
+              <p class="mb-0">
+                No any over charge. Upfront quotes, and competitive rates
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
+          >
+            <div
+              class="feature-item text-center border p-5"
+              style="min-height: 450px"
+            >
+              <div
+                style="background-color: lightgray"
+                class="feature-img d-inline-flex p-4"
+              >
+                <i style="color: #464646" class="fas fa-bolt fa-5x"></i>
+              </div>
+              <a href="#" class="fs-3 d-block my-4">Quick Communications</a>
+              <p class="mb-0">
+                We are committed to provide better response on every call we
+                get.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s"
+          >
+            <div
+              class="feature-item text-center border p-5"
+              style="min-height: 450px"
+            >
+              <div
+                style="background-color: lightgray"
+                class="feature-img d-inline-flex p-4"
+              >
+                <i style="color: #464646" class="fas fa-award fa-5x"></i>
+              </div>
+              <a href="#" class="fs-3 d-block my-4">Satisfaction Guaranteed</a>
+              <p class="mb-0">
+                We are the safeguard of our work with comprehensive warranties.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-
-
-
-
     <!-- Carousel End -->
 
     <!-- About Start -->
-    <div id="about" class="container-fluid about py-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-        <div class="container py-2">
-            <div class="row g-5 ">
-                <!-- Left Side: 4 Images in a 2-Column Grid -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
-                        <div style="width: 100%; height: 300px; overflow: hidden;">
-                            <img src="img/new/about1.jpg" alt="Image 1"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="width: 100%; height: 300px; overflow: hidden;">
-                            <img src="img/new/about2.jpg" alt="Image 2"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="width: 100%; height: 300px; overflow: hidden;">
-                            <img src="img/new/about3.jpg" alt="Image 3"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                        <div style="width: 100%; height: 300px; overflow: hidden;">
-                            <img src="img/new/about4.jpg" alt="Image 4"
-                                style="width: 100%; height: 100%; object-fit: cover;">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Side: Text Content -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="about-item-content">
-                        <h2 style="color: #464646;" class="display-4  mb-3 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">Excellence in Every Detail</h2>
-                        <p class="mb-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Your home is your biggest investment, and maintaining it shouldn't be a
-                            burden. At Bridgeview Maintenance, LLC, we provide comprehensive maintenance services—from
-                            landscaping and seasonal care to handyman repairs, HVAC, Plumbing, Electrical and exterior
-                            cleaning. With us, you get honest pricing, dependable service, and the peace of mind that
-                            your home is always in expert hands.
-                            <br>
-                            <br>
-                            Our team of licensed professionals brings years of combined experience to every job, from
-                            routine maintenance to critical repairs. We use cutting edge techniques and premium
-                            materials to ensure lasting results that excess your expectations.
-                        </p>
-                        <!-- Features / Services Section -->
-                        <!-- Features / Services Section -->
-
-
-
-                        <a style="background-color: #464646; color: #fff;" class="btn  my-5 d-inline-block py-3 px-5 me-2 flex-shrink-0 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s"
-                            href="#">Discover More</a>
-                    </div>
-                </div>
+    <div
+      id="about"
+      class="container-fluid about py-5 wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-2">
+        <div class="row g-5">
+          <!-- Left Side: 4 Images in a 2-Column Grid -->
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+          >
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem"
+            >
+              <div style="width: 100%; height: 300px; overflow: hidden">
+                <img
+                  src="img/new/about1.jpg"
+                  alt="Image 1"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div style="width: 100%; height: 300px; overflow: hidden">
+                <img
+                  src="img/new/about2.jpg"
+                  alt="Image 2"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div style="width: 100%; height: 300px; overflow: hidden">
+                <img
+                  src="img/new/about3.jpg"
+                  alt="Image 3"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div style="width: 100%; height: 300px; overflow: hidden">
+                <img
+                  src="https://i.ibb.co.com/R4TN8TpZ/safety-tools-painting-work.jpg"
+                  alt="Image 4"
+                  style="width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
             </div>
+          </div>
+
+          <!-- Right Side: Text Content -->
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            <div class="about-item-content">
+              <h2
+                style="color: #464646"
+                class="display-4 mb-3 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.4s"
+              >
+                Excellence in Every Detail
+              </h2>
+              <p
+                class="mb-4 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.5s"
+              >
+                Your home is your biggest investment, and maintaining it
+                shouldn't be a burden. At Bridgeview Maintenance, LLC, we
+                provide comprehensive maintenance services—from landscaping and
+                seasonal care to handyman repairs, HVAC, Plumbing, Electrical
+                and exterior cleaning. With us, you get honest pricing,
+                dependable service, and the peace of mind that your home is
+                always in expert hands.
+                <br />
+                <br />
+                Our team of licensed professionals brings years of combined
+                experience to every job, from routine maintenance to critical
+                repairs. We use cutting edge techniques and premium materials to
+                ensure lasting results that excess your expectations.
+              </p>
+              <!-- Features / Services Section -->
+              <!-- Features / Services Section -->
+
+              <a
+                style="background-color: #464646; color: #fff"
+                class="btn my-5 d-inline-block py-3 px-5 me-2 flex-shrink-0 wow fadeInUp"
+                data-wow-duration="1s"
+                data-wow-delay="0.6s"
+                href="#"
+                >Discover More</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- About End -->
 
     <!-- Features Start -->
-    <div id="why-choose-us" class="container-fluid feature bg-light py-5 wow " data-wow-duration="1s" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="max-width: 800px;">
-                <p class="text-uppercase  fs-5 mb-0">WHY CHOOSE US</p>
-                <h2 style="color:#464646" class="fs-1  mb-3">Quality You Can Rely On</h2>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                    <div class="feature-item text-center border p-5">
-                        <div style="background-color: lightgray;" class="feature-img  d-inline-flex p-4">
-                            <i style="color:#464646" class="fas fa-clock  fa-5x"></i>
-                        </div>
-                        <a href="#" class="fs-3 d-block my-4">24/7 Emergency</a>
-                        <p class="mb-0">We are committed to provide better response on every call we get..</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                    <div  class="feature-item text-center border p-5">
-                        <div style="background-color: lightgray;"  class="feature-img  d-inline-flex p-4">
-                            <i style="color:#464646"  class="fas fa-certificate  fa-5x"></i>
-                        </div>
-                        <a href="#" class="fs-3 d-block my-4">Transparent Pricing</a>
-                        <p class="mb-0">No any over charge. Upfront quotes, and competitive rates</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <div class="feature-item text-center border p-5">
-                        <div style="background-color: lightgray;"  class="feature-img  d-inline-flex p-4">
-                            <i style="color: #464646;" class="fas fa-bolt  fa-5x"></i>
-                        </div>
-                        <a href="#" class="fs-3 d-block my-4">Quick Communications</a>
-                        <p class="mb-0">We are committed to provide better response on every call we get. </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!-- Features End -->
 
-    <div id="services"
-        style="background: url('https://i.ibb.co.com/kstfPPTS/Brushes-to-Riches-How-to-Start-a-Successful-Painting-Business-and-Dominate-Your-Local-Market.jpg') center center / cover fixed no-repeat;">
+    <div
+      id="services"
+      style="
+        background: url('https://i.ibb.co.com/kstfPPTS/Brushes-to-Riches-How-to-Start-a-Successful-Painting-Business-and-Dominate-Your-Local-Market.jpg')
+          center center / cover fixed no-repeat;
+      "
+    >
+      <div style="background: rgba(70, 70, 70, 0.9); padding: 40px 0">
+        <div class="container">
+          <!-- Section Header -->
+          <div
+            class="text-center mb-5 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.1s"
+          >
+            <h6 style="color: lightgray; font-weight: 900; font-size: 20px;" class="text-uppercase  mb-2">
+              Our Services
+            </h6>
+            <h2 class="text-white display-4 mb-3">What We Offer</h2>
+            <p class="text-light mb-0">
+              Residential and Commercial services tailored to your needs—from
+              routine maintenance to expert repairs.
+            </p>
+          </div>
 
-        <div style="background: rgba(70,70,70,0.9); padding: 40px 0;">
-            <div class="container">
-
-                <!-- Section Header -->
-                <div class="text-center mb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
-                    <h6 style="color:lightslategrey" class=" text-uppercase  mb-2">Our Services</h6>
-                    <h2 class="text-white display-4 mb-3">What We Offer</h2>
-                    <p class="text-light mb-0">Reliable and professional services tailored to your needs—from routine
-                        maintenance to expert repairs.</p>
+          <!-- Services Grid -->
+          <div class="row g-4">
+            <!-- Service Card 1: General Repairs -->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
+            >
+              <div
+                class="card h-100 border-0"
+                style="
+                  background: #464646;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  transition: all 0.3s;
+                  cursor: pointer;
+                "
+                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+              >
+                <img
+                  src="https://i.ibb.co.com/vxqD5Fcw/S-dan-fjerner-du-ridser-og-revner-i-tr-gulvet.jpg"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="General Repairs"
+                  loading="lazy"
+                />
+                <div class="card-body p-4">
+                  <h5 class="text-white fw-bold mb-3">General Repairs</h5>
+                  <ul class="list-unstyled text-white mb-0">
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Drywall &
+                      Wall Repairs
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Door &
+                      Window Repairs
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Flooring
+                      Repairs
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Fixture
+                      Replacements
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Minor
+                      Plumbing Fixes
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-success">&#10003;</span> Caulking &
+                      Sealing
+                    </li>
+                  </ul>
                 </div>
-
-                <!-- Services Grid -->
-                <div class="row g-4">
-
-                    <!-- Service Card 1: General Repairs -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="card h-100 border-0"
-                            style="background:#464646; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;"
-                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                            <img src="https://i.ibb.co.com/vxqD5Fcw/S-dan-fjerner-du-ridser-og-revner-i-tr-gulvet.jpg" class="card-img-top"
-                                style="height:180px; object-fit:cover;" alt="General Repairs" loading="lazy">
-                            <div class="card-body p-4">
-                                <h5 class="text-white fw-bold mb-3">General Repairs</h5>
-                                <ul class="list-unstyled text-white mb-0">
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Drywall & Wall Repairs</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Door & Window Repairs</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Flooring Repairs</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Fixture Replacements</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Minor Plumbing Fixes</li>
-                                    <li class="d-flex align-items-start"><span class="me-2 text-success">&#10003;</span>
-                                        Caulking & Sealing</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 2: Electrical Services -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="card h-100 border-0"
-                            style="background:#464646; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;"
-                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                            <img src="https://i.ibb.co.com/GQP3g979/Get-Best-Energy-Efficient-Transformer-Core.jpg"
-                                class="card-img-top" style="height:180px; object-fit:cover;" alt="Electrical Services"
-                                loading="lazy">
-                            <div class="card-body p-4">
-                                <h5 class="text-white fw-bold mb-3">Electrical Services</h5>
-                                <ul class="list-unstyled text-white mb-0">
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Outlet Installation</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Circuit Repairs</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Light Fixture Setup</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Safety Inspections</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Smoke & CO Detector Installation
-                                    </li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Fuse Replacement</li>
-                                    <li class="d-flex align-items-start"><span class="me-2 text-success">&#10003;</span>
-                                        Rewiring</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 3: Plumbing Repairs -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="card h-100 border-0"
-                            style="background:#464646; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;"
-                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                            <img src="https://i.ibb.co.com/5hWx0bTh/download.jpg"
-                                class="card-img-top" style="height:180px; object-fit:cover;" alt="Plumbing Repairs"
-                                loading="lazy">
-                            <div class="card-body p-4">
-                                <h5 class="text-white fw-bold mb-3">Plumbing Repairs</h5>
-                                <ul class="list-unstyled text-white mb-0">
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Leak Detection</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Showerheads & Toilets</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Drain Cleaning</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Dishwasher/Washing Hookups</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Water Heater Work</li>
-                                    <li class="d-flex align-items-start"><span class="me-2 text-success">&#10003;</span>
-                                        Major Drain Clearing</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 4: HVAC Maintenance -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="card h-100 border-0"
-                            style="background:#464646; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;"
-                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                            <img src="https://i.ibb.co.com/B5P2y0Lj/Ac-Repair-Near-Me.jpg"
-                                class="card-img-top" style="height:180px; object-fit:cover;" alt="HVAC Maintenance"
-                                loading="lazy">
-                            <div class="card-body p-4">
-                                <h5 class="text-white fw-bold mb-3">HVAC Maintenance</h5>
-                                <ul class="list-unstyled text-white mb-0">
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Air Filter Replacement</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Air Vents Cleaning</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Thermostat Battery</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Coil Cleaning</li>
-                                    <li class="d-flex align-items-start"><span class="me-2 text-success">&#10003;</span>
-                                        System Checks</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 5: Preventive Care -->
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <div class="card h-100 border-0"
-                            style="background:#464646; border-radius:12px; overflow:hidden; transition:all 0.3s; cursor:pointer;"
-                            onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
-                            onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-                            <img src="https://i.ibb.co/QjkKXWPD/worker-performs-overhaul-roof-residential-building.jpg"
-                                class="card-img-top" style="height:180px; object-fit:cover;" alt="Preventive Care"
-                                loading="lazy">
-                            <div class="card-body p-4">
-                                <h5 class="text-white fw-bold mb-3">Preventive Care</h5>
-                                <ul class="list-unstyled text-white mb-0">
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Gutter Maintenance</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Weatherproofing</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Plumbing Checks</li>
-                                    <li class="d-flex align-items-start mb-2"><span
-                                            class="me-2 text-success">&#10003;</span> Exterior Upkeep</li>
-                                    <li class="d-flex align-items-start"><span class="me-2 text-success">&#10003;</span>
-                                        Appliance Maintenance</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+              </div>
             </div>
+
+            <!-- Service Card 2: Electrical Services -->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
+            >
+              <div
+                class="card h-100 border-0"
+                style="
+                  background: #464646;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  transition: all 0.3s;
+                  cursor: pointer;
+                "
+                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+              >
+                <img
+                  src="https://i.ibb.co.com/GQP3g979/Get-Best-Energy-Efficient-Transformer-Core.jpg"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Electrical Services"
+                  loading="lazy"
+                />
+                <div class="card-body p-4">
+                  <h5 class="text-white fw-bold mb-3">Electrical Services</h5>
+                  <ul class="list-unstyled text-white mb-0">
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Outlet Installation
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Circuit Repairs
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Light Fixture Setup
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Safety Inspections
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Installing/removing smoke & CO detectors (battery or plug-in types)
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Replacing fuses or resetting breakers
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Adding new outlets, switches, or light fixtures with rewiring
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-success">&#10003;</span> Service panel work (breaker box upgrades or repairs) etc
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Card 3: Plumbing Repairs -->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
+            >
+              <div
+                class="card h-100 border-0"
+                style="
+                  background: #464646;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  transition: all 0.3s;
+                  cursor: pointer;
+                "
+                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+              >
+                <img
+                  src="https://i.ibb.co.com/5hWx0bTh/download.jpg"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Plumbing Repairs"
+                  loading="lazy"
+                />
+                <div class="card-body p-4">
+                  <h5 class="text-white fw-bold mb-3">Plumbing Repairs</h5>
+                  <ul class="list-unstyled text-white mb-0">
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Leak Detection
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Replacing showerheads
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Replacing toilets or toilet seats
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Unclogging drains with a plunger or hand/cable auger
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Installing dishwasher or washing machine hookups (if existing plumbing is ready)
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Replacing or relocating water heaters
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Major drain clearing with motorized snakes or hydro-jetting
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-success">&#10003;</span> Any work that connects directly to the plumbing system beyond fixture swaps
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Card 4: HVAC Maintenance -->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div
+                class="card h-100 border-0"
+                style="
+                  background: #464646;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  transition: all 0.3s;
+                  cursor: pointer;
+                "
+                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+              >
+                <img
+                  src="https://i.ibb.co.com/B5P2y0Lj/Ac-Repair-Near-Me.jpg"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="HVAC Maintenance"
+                  loading="lazy"
+                />
+                <div class="card-body p-4">
+                  <h5 class="text-white fw-bold mb-3">HVAC Maintenance</h5>
+                  <ul class="list-unstyled text-white mb-0">
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Replacing air filters (monthly/quarterly service)
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Cleaning air vents and registers
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Thermostat battery replacement
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Outdoor condenser coil cleaning and replacement
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-success">&#10003;</span> Checking that system is on, running, and reporting issues
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Card 5: Preventive Care -->
+            <div
+              class="col-lg-4 col-md-6 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.6s"
+            >
+              <div
+                class="card h-100 border-0"
+                style="
+                  background: #464646;
+                  border-radius: 12px;
+                  overflow: hidden;
+                  transition: all 0.3s;
+                  cursor: pointer;
+                "
+                onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.3)';"
+                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';"
+              >
+                <img
+                  src="https://i.ibb.co/QjkKXWPD/worker-performs-overhaul-roof-residential-building.jpg"
+                  class="card-img-top"
+                  style="height: 180px; object-fit: cover"
+                  alt="Preventive Care"
+                  loading="lazy"
+                />
+                <div class="card-body p-4">
+                  <h5 class="text-white fw-bold mb-3">Preventive Care</h5>
+                  <ul class="list-unstyled text-white mb-0">
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Gutter
+                      Maintenance
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span>
+                      Weatherproofing
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Plumbing
+                      Checks
+                    </li>
+                    <li class="d-flex align-items-start mb-2">
+                      <span class="me-2 text-success">&#10003;</span> Exterior
+                      Upkeep
+                    </li>
+                    <li class="d-flex align-items-start">
+                      <span class="me-2 text-success">&#10003;</span> Appliance
+                      Maintenance
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
+    <!-- Fact Counter -->
+    <
+    <!-- Optional: Add hover effect via CSS -->
+    <style>
+      .card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+
+    <!-- Services Section End -->
 
     <!-- Fact Counter -->
-    < <!-- Optional: Add hover effect via CSS -->
-        <style>
-            .card:hover {
-                transform: translateY(-5px);
-            }
-        </style>
 
-
-        <!-- Services Section End -->
-
-        <!-- Fact Counter -->
-
-        <!-- Projects Start -->
-        <div id="recent-projects" class="container-fluid project py-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="background-color: #fff;">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <p class="text-uppercase fs-5 mb-0" style="color: #464646;">Our Projects</p>
-                    <h2 class="display-4 text-capitalize mb-3" style="color: #464646;">Recent Completed Projects</h2>
-                    <p class="text-muted">Showcasing our expertise across general repairs, electrical, plumbing, HVAC,
-                        and
-                        preventive maintenance.</p>
-                </div>
-                <div class="row g-5">
-
-                    <!-- Project 1 -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="project-item">
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="">
-                                        <img src="img/new/recent.jpg" class=" w-100 pt-3 ps-3"
-                                            style="object-fit: cover;height: 180px;" alt="General Repairs Project">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div style="color: #464646;" class="project-content mb-4">
-                                        <p class="fs-5  mb-2">General Repairs</p>
-                                        <p href="#" class="fs-3" style="color: #464646;">Home Interior Fixes</p>
-                                        <p class="mb-0 mt-3 text-muted">Completed drywall, flooring, door/window repairs, and
-                                            fixture
-                                            replacements to enhance the home's functionality and appearance.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="project-item">
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="">
-                                        <img src="img/new/recent2.jpg" class=" w-100 pt-3 ps-3"
-                                            style="object-fit: cover;height: 180px;" alt="Electrical Project">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="project-content mb-4">
-                                        <p class="fs-5 mb-2" style="color: #464646;">Electrical Services</p>
-                                        <p href="#" class="fs-3" style="color: #464646;">Safe Electrical Installations</p>
-                                        <p class="mb-0 mt-3 text-muted">Installed new outlets, repaired circuits, set up light
-                                            fixtures, and ensured safety compliance for residential clients.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="project-item">
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="">
-                                        <img src="img/new/recent3.jpg" class=" w-100 pt-3 ps-3"
-                                            style="object-fit: cover;height: 180px;" alt="Plumbing Project">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="project-content mb-4">
-                                        <p class="fs-5 mb-2" style="color: #464646;">Plumbing Repairs</p>
-                                        <p href="#" class="fs-3" style="color: #464646;">Efficient Plumbing Solutions</p>
-                                        <p class="mb-0 mt-3 text-muted">Handled leak detection, drain unclogging, showerhead/toilet
-                                            replacements, and water heater installations for improved functionality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
-                        <div class="project-item">
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="">
-                                        <img src="img/new/recent4.jpg" class=" w-100 pt-3 ps-3"
-                                            style="object-fit: cover;height: 180px;" alt="HVAC Project">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="project-content mb-4">
-                                        <p class="fs-5 mb-2" style="color: #464646;">HVAC Maintenance</p>
-                                        <p href="#" class="fs-3" style="color: #464646;">Heating & Cooling Services</p>
-                                        <p class="mb-0 mt-3 text-muted">Performed air filter replacements, vent cleaning, coil
-                                            maintenance, and system checks to ensure optimal HVAC performance.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
+    <!-- Projects Start -->
+    <!-- <div
+      id="recent-projects"
+      class="container-fluid project py-5 wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-delay="0.1s"
+      style="background-color: #fff"
+    >
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <p class="text-uppercase fs-5 mb-0" style="color: #464646">
+            Our Projects
+          </p>
+          <h2 class="display-4 text-capitalize mb-3" style="color: #464646">
+            Recent Completed Projects
+          </h2>
+          <p class="text-muted">
+            Showcasing our expertise across general repairs, electrical,
+            plumbing, HVAC, and preventive maintenance.
+          </p>
         </div>
-
-        <!-- Projects End -->
-
-        <!-- Contact Start -->
-        <div id="contact" class="container-fluid contact py-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" style="background-color: #fff;">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" style="max-width: 800px;">
-                    <p class="text-uppercase fs-5 mb-0" style="color: #464646;">Contact Us</p>
-                    <h2 class="display-4 text-capitalize mb-3" style="color: #464646;">Let's Take Care of Your Home</h2>
-                    <p class="text-muted mb-0" style="max-width: 600px; margin: 0 auto;">
-                        Have a question, need a quote, or ready to schedule a service? We'd love to hear from you. Our
-                        team
-                        responds quickly and makes the process simple—so you can spend less time worrying about
-                        maintenance
-                        and more time enjoying your home.
+        <div class="row g-5">
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            <div class="project-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="">
+                    <img
+                      src="img/new/recent.jpg"
+                      class="w-100 pt-3 ps-3"
+                      style="object-fit: cover; height: 180px"
+                      alt="General Repairs Project"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div style="color: #464646" class="project-content mb-4">
+                    <p class="fs-5 mb-2">General Repairs</p>
+                    <p href="#" class="fs-3" style="color: #464646">
+                      Home Interior Fixes
                     </p>
+                    <p class="mb-0 mt-3 text-muted">
+                      Completed drywall, flooring, door/window repairs, and
+                      fixture replacements to enhance the home's functionality
+                      and appearance.
+                    </p>
+                  </div>
                 </div>
-
-                <div class="row g-5">
-                    <!-- Contact Info -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-                        <div class="contact-info">
-                            <h3 class="mb-4" style="color: #464646;">Contact Information</h3>
-
-                            <div class="d-flex mb-4">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-map-marker-alt text-primary fa-2x"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="text-dark">Address</h5>
-                                    <p class="mb-0">100 N Howard St STE R<br>Spokane, WA 99201</p>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-4">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-phone text-primary fa-2x"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="text-dark">Phone</h5>
-                                    <p class="mb-0">(206) 456-8777<br><small style="color: #666;">Always Open</small>
-                                    </p>
-                                </div>
-                            </div>
-
-                            <div class="d-flex mb-4">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-envelope text-primary fa-2x"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="text-dark">Email</h5>
-                                    <p class="mb-0">info@bridgeviewmaintenance.com<br><small style="color: #666;">We
-                                            respond within an hour</small></p>
-                                </div>
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-clock text-primary fa-2x"></i>
-                                </div>
-                                <div class="ms-3">
-                                    <h5 class="text-dark">Business Hours</h5>
-                                    <p class="mb-0">Monday to Saturday from 8:00 AM to 6:00 PM<br><small
-                                            style="color: #666;">Before 8:00 AM and After 6:00 PM emergency
-                                            only</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-                        <div class="contact-form">
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Your Name" required>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Your Email" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <input type="text" class="form-control" placeholder="Subject" required>
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea class="form-control" rows="5" placeholder="Your Message"
-                                            required></textarea>
-                                    </div>
-                                    <div class="col-12">
-                                        <button style="background-color: #464646; color: #fff;" class="btn  py-3 px-5" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <div class="project-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="">
+                    <img
+                      src="img/new/recent2.jpg"
+                      class="w-100 pt-3 ps-3"
+                      style="object-fit: cover; height: 180px"
+                      alt="Electrical Project"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="project-content mb-4">
+                    <p class="fs-5 mb-2" style="color: #464646">
+                      Electrical Services
+                    </p>
+                    <p href="#" class="fs-3" style="color: #464646">
+                      Safe Electrical Installations
+                    </p>
+                    <p class="mb-0 mt-3 text-muted">
+                      Installed new outlets, repaired circuits, set up light
+                      fixtures, and ensured safety compliance for residential
+                      clients.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
+          >
+            <div class="project-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="">
+                    <img
+                      src="img/new/recent3.jpg"
+                      class="w-100 pt-3 ps-3"
+                      style="object-fit: cover; height: 180px"
+                      alt="Plumbing Project"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="project-content mb-4">
+                    <p class="fs-5 mb-2" style="color: #464646">
+                      Plumbing Repairs
+                    </p>
+                    <p href="#" class="fs-3" style="color: #464646">
+                      Efficient Plumbing Solutions
+                    </p>
+                    <p class="mb-0 mt-3 text-muted">
+                      Handled leak detection, drain unclogging,
+                      showerhead/toilet replacements, and water heater
+                      installations for improved functionality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s"
+          >
+            <div class="project-item">
+              <div class="row g-4">
+                <div class="col-md-4">
+                  <div class="">
+                    <img
+                      src="img/new/recent4.jpg"
+                      class="w-100 pt-3 ps-3"
+                      style="object-fit: cover; height: 180px"
+                      alt="HVAC Project"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div class="project-content mb-4">
+                    <p class="fs-5 mb-2" style="color: #464646">
+                      HVAC Maintenance
+                    </p>
+                    <p href="#" class="fs-3" style="color: #464646">
+                      Heating & Cooling Services
+                    </p>
+                    <p class="mb-0 mt-3 text-muted">
+                      Performed air filter replacements, vent cleaning, coil
+                      maintenance, and system checks to ensure optimal HVAC
+                      performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Projects End -->
+
+    <!-- Contact Start -->
+    <div
+      id="contact"
+      class="container-fluid contact py-5 wow fadeInUp"
+      data-wow-duration="1s"
+      data-wow-delay="0.1s"
+      style="background-color: #fff"
+    >
+      <div class="container py-5">
+        <div
+          class="text-center mx-auto pb-5 wow fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+          style="max-width: 800px"
+        >
+          <p class="text-uppercase  mb-0" style="color: #464646; font-weight: 900; font-size: 20px;" class="text-uppercase  mb-2">
+            Contact Us
+          </p>
+          <h2 class="display-4 text-capitalize mb-3" style="color: #464646">
+            Let's Take Care of Your Home
+          </h2>
+          <p class="text-muted mb-0" style="max-width: 600px; margin: 0 auto">
+            Have a question, need a quote, or ready to schedule a service? We'd
+            love to hear from you. Our team responds quickly and makes the
+            process simple—so you can spend less time worrying about maintenance
+            and more time enjoying your home.
+          </p>
         </div>
 
-        <!-- Contact End -->
+        <div class="row g-5">
+          <!-- Contact Info -->
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
+          >
+            <div class="contact-info">
+              <h3 class="mb-4" style="color: #464646">Contact Information</h3>
 
-
-        <!-- Footer Start -->
-        <footer style="background-color:#464646; color:#fff; padding:50px 0;">
-            <div class="container">
-                <div class="row g-4">
-
-                    <!-- Column 1: Contact -->
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="mb-3" style="color: #fff; font-weight: 600;">Contact</h5>
-                        <div class="mb-3">
-                            <i class="fas fa-map-marker-alt me-2" style="color: #ccc;"></i>
-                            <span style="color: #ccc;">100 N Howard St STE R, Spokane, WA 99201</span>
-                        </div>
-                        <div class="mb-3">
-                            <i class="fas fa-phone me-2" style="color: #ccc;"></i>
-                            <span style="color: #ccc;">(206) 456-8777</span>
-                            <small class="d-block" style="color: #999; margin-left: 20px;">Always Open</small>
-                        </div>
-                        <div class="mb-3">
-                            <i class="fas fa-envelope me-2" style="color: #ccc;"></i>
-                            <span style="color: #ccc;">info@bridgeviewmaintenance.com</span>
-                            <small class="d-block" style="color: #999; margin-left: 20px;">We respond within an hour</small>
-                        </div>
-                        <div class="mb-0">
-                            <i class="fas fa-clock me-2" style="color: #ccc;"></i>
-                            <span style="color: #ccc;">Mon-Sat 8:00 AM - 6:00 PM</span>
-                            <small class="d-block" style="color: #999; margin-left: 20px;">Emergency only before/after hours</small>
-                        </div>
-                    </div>
-
-                    <!-- Column 2: Quick Links -->
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="mb-3" style="color: #fff; font-weight: 600;">Quick Links</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a href="#home" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Home</a></li>
-                            <li class="mb-2"><a href="#services" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Services</a></li>
-                            <li class="mb-2"><a href="#recent-projects" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Projects</a></li>
-                            <li class="mb-2"><a href="#contact" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Contact</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 3: Services -->
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="mb-3" style="color: #fff; font-weight: 600;">Services</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a href="#general-repairs" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">General Repairs</a></li>
-                            <li class="mb-2"><a href="#electrical" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Electrical Services</a></li>
-                            <li class="mb-2"><a href="#plumbing" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Plumbing Repairs</a></li>
-                            <li class="mb-2"><a href="#hvac" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">HVAC Maintenance</a></li>
-                            <li class="mb-2"><a href="#preventive-care" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Preventive Care</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Column 4: Support -->
-                    <div class="col-md-6 col-lg-3">
-                        <h5 class="mb-3" style="color: #fff; font-weight: 600;">Support</h5>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><a href="#privacy-policy" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Privacy Policy</a></li>
-                            <li class="mb-2"><a href="#terms" class="text-decoration-none" style="color: #ccc; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#ccc'">Terms & Conditions</a></li>
-                        </ul>
-                    </div>
-
+              <div class="d-flex mb-4">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-map-marker-alt text-primary fa-2x"></i>
                 </div>
-
-                <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
-
-                <div class="text-center" style="color: #ccc; font-size:0.9rem;">
-                    &copy; 2025 Bridgeview Maintenance, LLC. All Rights Reserved.
+                <div class="ms-3">
+                  <h5 class="text-dark">Address</h5>
+                  <p class="mb-0">
+                    100 N Howard St STE R<br />Spokane, WA 99201
+                  </p>
                 </div>
+              </div>
+
+              <div class="d-flex mb-4">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-phone text-primary fa-2x"></i>
+                </div>
+                <div class="ms-3">
+                  <h5 class="text-dark">Phone</h5>
+                  <p class="mb-0">
+                    (206) 456-8777<br />
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex mb-4">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-envelope text-primary fa-2x"></i>
+                </div>
+                <div class="ms-3">
+                  <h5 class="text-dark">Email</h5>
+                  <p class="mb-0">
+                    info@bridgeviewmaintenance.com<br />
+                  </p>
+                </div>
+              </div>
+
+              <div class="d-flex">
+                <div class="flex-shrink-0">
+                  <i class="fas fa-clock text-primary fa-2x"></i>
+                </div>
+                <div class="ms-3">
+                  <h5 class="text-dark">Business Hours</h5>
+                  <p class="mb-0">
+                    Monday to Saturday from 8:00 AM to 6:00 PM<br /><small
+                      style="color: #666"
+                      >Before 8:00 AM and After 6:00 PM emergency only</small
+                    >
+                  </p>
+                </div>
+              </div>
             </div>
-        </footer>
+          </div>
 
+          <!-- Contact Form -->
+          <div
+            class="col-lg-6 wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <div class="contact-form">
+              <form id="contact-form">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      id="message"
+                      name="message"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Your Message"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button
+                      id="submit-btn"
+                      style="background-color: #464646; color: #fff"
+                      class="btn py-3 px-5"
+                      type="submit"
+                    >
+                      <span id="btn-text">Send Message</span>
+                      <span id="btn-loading" style="display: none"
+                        >Sending...</span
+                      >
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Contact End -->
 
+    <!-- Footer Start -->
+    <footer style="background-color: #464646; color: #fff; padding: 50px 0">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Column 1: Contact -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3" style="color: #fff; font-weight: 600">Contact</h5>
+            <div class="mb-3">
+              <i class="fas fa-map-marker-alt me-2" style="color: #ccc"></i>
+              <span style="color: #ccc"
+                >100 N Howard St STE R, Spokane, WA 99201</span
+              >
+            </div>
+            <div class="mb-3">
+              <i class="fas fa-phone me-2" style="color: #ccc"></i>
+              <span style="color: #ccc">(206) 456-8777</span>
+            </div>
+            <div class="mb-3" style="display: flex;">
+              <i class="fas fa-envelope me-2" style="color: #ccc"></i>
+              <span style="color: #ccc">info@bridgeviewmaintenance.com</span>
+             
+            </div>
+            <div class="mb-0">
+              <i class="fas fa-clock me-2" style="color: #ccc"></i>
+              <span style="color: #ccc">Mon-Sat 8:00 AM - 6:00 PM</span>
+              <small class="d-block" style="color: #999; margin-left: 20px"
+                >Emergency only before/after hours</small
+              >
+            </div>
+          </div>
 
+          <!-- Column 2: Quick Links -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3" style="color: #fff; font-weight: 600">
+              Quick Links
+            </h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="#home"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Home</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#services"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#contact"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
 
-        <!-- Footer End -->
+          <!-- Column 3: Services -->
+          <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3" style="color: #fff; font-weight: 600">Services</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="#general-repairs"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >General Repairs</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#electrical"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Electrical Services</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#plumbing"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Plumbing Repairs</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#hvac"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >HVAC Maintenance</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#preventive-care"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Preventive Care</a
+                >
+              </li>
+            </ul>
+          </div>
 
+          <!-- Column 4: Support -->
+          <!-- <div class="col-md-6 col-lg-3">
+            <h5 class="mb-3" style="color: #fff; font-weight: 600">Support</h5>
+            <ul class="list-unstyled mb-0">
+              <li class="mb-2">
+                <a
+                  href="#privacy-policy"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#terms"
+                  class="text-decoration-none"
+                  style="color: #ccc; transition: color 0.3s"
+                  onmouseover="this.style.color='#fff'"
+                  onmouseout="this.style.color='#ccc'"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div> -->
+        </div>
 
+        <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2)" />
 
-        <!-- Back to Top -->
-        <a href="#" style="background-color: #464646; color: #fff;" class="btn  btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+        <div class="text-center" style="color: #ccc; font-size: 0.9rem">
+          &copy; 2025 Bridgeview Maintenance, LLC. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
 
+    <!-- Footer End -->
 
-        <!-- JavaScript Libraries -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/counterup/counterup.min.js"></script>
-        <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- Back to Top -->
+    <a
+      href="#"
+      style="background-color: #464646; color: #fff"
+      class="btn btn-lg-square back-to-top"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
 
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
-        <!-- Custom Javascript -->
-        <script src="js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
 
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize EmailJS with config
+        emailjs.init(ENV.EMAILJS_PUBLIC_KEY);
+
+        // Get form and handle submission
+        const form = document.getElementById("contact-form");
+        
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Button UI handling
+          document.getElementById("btn-text").style.display = "none";
+          document.getElementById("btn-loading").style.display = "inline";
+
+          emailjs
+            .sendForm(ENV.EMAILJS_SERVICE_ID, ENV.EMAILJS_TEMPLATE_ID, this)
+            .then(
+              function () {
+                alert("✅ Message sent successfully!");
+                document.getElementById("contact-form").reset();
+              },
+              function (error) {
+                alert("❌ Failed to send message: " + JSON.stringify(error));
+              }
+            )
+            .finally(() => {
+              document.getElementById("btn-text").style.display = "inline";
+              document.getElementById("btn-loading").style.display = "none";
+            });
+        });
+      });
+    </script>
+
+    <!-- Custom Javascript -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
